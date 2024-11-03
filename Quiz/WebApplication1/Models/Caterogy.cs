@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models
 {
-    public class Caterogy
+    [Table("Category")]
+    public class Category
     {
         [Key]
         public int CategoryId { get; set; }

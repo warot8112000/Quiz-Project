@@ -13,6 +13,8 @@ namespace WebApplication1.Models
         [Required]
         [StringLength(100)]
         public string LevelName { get; set; }
+        public virtual ICollection<Quiz> Quizzes { get; set; } = new List<Quiz>();
     }
+}
 
 }

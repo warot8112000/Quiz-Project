@@ -22,5 +22,6 @@ namespace WebApplication1.Models
 
         public virtual Quiz Quiz { get; set; }
         public virtual QuestionType QuestionType { get; set; }
+        public virtual ICollection<AnswerOption> AnswerOptions { get; set; } = new List<AnswerOption>();
     }
 }

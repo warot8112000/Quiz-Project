@@ -21,5 +21,6 @@ namespace WebApplication1.Models
 
         public virtual User User { get; set; }
         public virtual Quiz Quiz { get; set; }
+        public virtual ICollection<Answer> Answers { get; set; } = new List<Answer>();
     }
 }

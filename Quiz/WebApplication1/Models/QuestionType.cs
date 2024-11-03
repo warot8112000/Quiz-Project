@@ -12,5 +12,7 @@ namespace WebApplication1.Models
         [Required]
         [StringLength(100)]
         public string TypeName { get; set; }
+        public virtual ICollection<Question> Questions { get; set; } = new List<Question>();
     }
 }
+

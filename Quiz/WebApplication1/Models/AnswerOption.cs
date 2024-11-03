@@ -21,5 +21,6 @@ namespace WebApplication1.Models
         public int? RankingPosition { get; set; }
 
         public virtual Question Question { get; set; }
+
     }
 }

@@ -29,5 +29,8 @@ namespace WebApplication1.Models
 
         public virtual User User { get; set; }
         public virtual Level Level { get; set; }
+        public virtual ICollection<QuizCategory> QuizCategories { get; set; } = new List<QuizCategory>();
+        public virtual ICollection<Question> Questions { get; set; } = new List<Question>();
+        public virtual ICollection<UserQuiz> UserQuizzes { get; set; } = new List<UserQuiz>();
     }
 }
